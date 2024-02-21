@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Estilos.css">
+    <title>Deal And MOB</title>
+</head>
+<body>
+    <div class="contenedor">
+                <nav class="navbar">
+                    <div class="brand">
+                        <H2><span class="emojis">DRMH</span></H2><!--Puedes poner tu logo o personalizar con tus iniciales-->
+                    </div>
+                    <ul id="menu">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#about">Acerca de mí</a></li>
+                        <li><a href="#portfolio">Portafolio</a></li>
+                        <li><a href="#contact">Contáctame</a></li>
+                    </ul>
+                    <span id="btn_menu" class="fa fa-bars"></span>
+                </nav>
+
+            <main class="main">
+                <div class="info-content">
+                    <h1>¡Hola! soy "<span>Dilán</span> Raál"</h1>
+                    <p>Aquí puedes colocar un resumen de tu cv</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, odit. Laboriosam architecto expedita adipisci totam perspiciatis facilis asperiores fugiat nostrum earum, est hic ratione eius qui saepe commodi.</p>
+                    <a download href="img/CV.pdf"> <!--Aquí puedes poner la ruta a tu cv-->
+                        <button class="buttons">Descarga aquí mi CV</button>
+                    </a>
+                </div>
+                <img src="img/Foto.jpg" alt="Tu foto">
+            </main>
+
+
+        <section class="about" id="about">
+            <img loading="lazy" decoding="async" src="img/About.jpg" alt="Retrato">
+            <div class="about-info">
+            <h2>Acerca de mí</h2>
+            <div class="divider"></div>
+            <p>¡Aquí puedes colocar tu información!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolorem ipsam facilis corporis minus, recusandae harum culpa, sapiente nihil cum quam, excepturi tenetur iste id quia earum nisi numquam. At?</p>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><!--Aquí puedes poner tu Linkedin-->
+                <button class="buttons">Seguir leyendo</button>
+            </a>
+            </div>
+        </section>
+
+
+        <section class="portfolio" id="portfolio">
+            <div class="portfolio-headings">
+                <h2>Mi Portafolio</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="container">
+                <div class="cards">
+                    <div class="card">
+                        <div loading="lazy" decoding="async" class="card-img"></div>
+                        <div class="card-title">
+                            <h2>Mis proyectos</h2>
+                            <p>Descripción de tu proyecto.</p>
+                        </div>
+                        <div class="card-projects-link">
+                            <a class="fab fa-github" href="https://github.com/" target="_blank"></a>
+                            <a class="fas fa-globe-americas" href=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div loading="lazy" decoding="async" class="card-img"></div>
+                        <div class="card-title">
+                            <h2>Mis proyectos</h2>
+                            <p>Descripción de tu proyecto.</p>
+                        </div>
+                        <div class="card-projects-link">
+                            <a class="fab fa-github" href="https://github.com/" target="_blank"></a>
+                            <a class="fas fa-globe-americas" href=""></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div loading="lazy" decoding="async" class="card-img"></div>
+                        <div class="card-title">
+                            <h2>Mis proyectos</h2>
+                            <p>Descripción de tu proyecto.</p>
+                        </div>
+                        <div class="card-projects-link">
+                            <a class="fab fa-github" href="https://github.com/" target="_blank"></a>
+                            <a class="fas fa-globe-americas" href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Charlemos</h2>
+            <div class="container-contact">
+                <form class="form" id="formulario" method="POST" action="https://formsubmit.co/c913193a8521e869b7a1caaf2712dbe7"> <!--Aquí puedes poner tu correo, después de la barra. Al enviar un mensaje te llegará un correo para confirmar.-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://nstdev.github.io/Plantilla-de-portafolio-GRATUITA/"> <!--Aquí puedes poner tu página web-->
+                    <input type="hidden" name="_subject" value="¡Nuevo mensaje!">
+                    <input type="text" name="Nombre" placeholder="Nombre" id="nombre" required>
+                    <input type="email" name="Correo" placeholder="Correo" id="correo" required>
+                    <textarea type="text" name="Mensaje" placeholder="Escríbe tu mensaje aquí..." id="mensaje"></textarea>
+                    <button class="btn-submit" type="submit" id="thanks">Envíar</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <h2 style="float:left;"><span class="emojis">&#127810</span> N.T.</h2>
+                <div class="social-networks" style="float:right;">
+                    <a href="https://github.com/NahuelTR" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/nahuelsantiagotroncosoraskovsky/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.paypal.com/paypalme/TroncosoRaskovsky" target="_blank">
+                        <i class="fab fa-paypal"></i>
+                    </a>
+                </div>
+                <h5 style="float:left">Web Developer</h5>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/9104043266.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../PrtafolioPersonal/JS/scriptt.js"></script>
+    
+</body>
+</html>

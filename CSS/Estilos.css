@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    font-size: 30px;
+    font-size: 25px;
     height: 100%;
     overflow-x: hidden;
 }
@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Teko';
+    font-family: 'sans';
 }
 
 body::-webkit-scrollbar {
@@ -25,28 +25,28 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #4542ff2f;
+    background-color: #0e0e0ec2;
 }
 
 /*----------NAVBAR----------*/
 .navbar {
     width: 100vw;
-    background-color: #1a73a770;
+    background-color: #191919;
     display: flex;
     justify-content: space-between;
     padding: 0em 0em 0.2em;
-    border-bottom: 0.3em solid #426eff;
+    border-bottom: 0.1em solid #ffffff93;
     position: fixed;
 }
 
 .brand {
-    max-width: 3.5em;
+    max-width: 5em;
     max-height: 3em;
     padding: 0.06em 0.3em;
     margin: 0.3em 1.3em 0em;
     font-size: 0.6em;
     background-color: #000000;
-    border: 0.3em solid #c98d25;
+    border: 0.3em solid #ffd9008a;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -64,15 +64,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 #menu a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
-    padding: 0.3em 0.6em;
+    padding: 0.2em 1em;
     transition: ease-in .3s;
 }
 
 #menu a:hover {
-    background-color: #ffbb42;
-    color: #1b0d0c;
+    background-color: #32a8bd7e;
+    color: #f7f7f7;
+    border-radius: 10px;
 }
 
 
@@ -100,17 +101,17 @@ ul.show {
 /*----------HOME----------*/
 .main {
     width: 100vw;
-    padding: 4.6em 2em 2em;
+    padding: 4.5em 2em 2em;
     display: grid;
     align-items: center;
-    background-color: #4D774E;
+    background-color: #968974;
 }
 
 .main img {
     max-width: 11.9em;
-    border: 0.3em solid #ffbb42;
-    margin: 0em 5vw;
+    border: 0.2em solid #000000;
     grid-column: 2;
+    border-radius: 15px;
 }
 
 .info-content a {
@@ -119,37 +120,36 @@ ul.show {
 }
 
 .info-content h1 {
-    font-size: 2em;
-    color: #FFFFFF;
-    text-shadow: 0.07em 0.07em #1b0d0c;
+    font-size: 3em;
+    color: #000000;
+    text-shadow: 0.04em 0.04em #00000088;
 }
 
 .info-content p {
-    font-size: 1em;
+    font-size: 1.1em;
     padding-right: 2em;
-    margin: 0 auto 1.3em;
-    color: #FFFFFF;
+    margin: 0 auto 4em;
+    color: #000000;
 }
 
 span {
-    color: #ffbb42;
+    color: #ffffffc2;
 }
 /*----------HOME----------*/
 
 
 /*----------DECORATIVE----------*/
 .buttons {
-    font-size: 1em;
+    font-size: 0.8em;
     padding: 0.3em 0.6em;
-    background-color: #FFFFFF;
-    border: none;
+    background-color: #725817d5;
+    border-radius: 20px;
     cursor: pointer;
-    box-shadow: #ffbb42;
-    transition: ease-in .3s;
+    transition: ease-in .2s;
 }
 
 .buttons:hover {
-    background-color: #ffbb42;
+    background-color: #808080;
     color: #1b0d0c;
 }
 
@@ -187,34 +187,38 @@ span {
 .about {
     width: 100vw;
     display: grid;
-    background-color: #1b0d0c;
-    border-top: 0.3em solid #ffbb42;
-    border-bottom: 0.3em solid #ffbb42;
+    background-color: #000000;
+    border-top: 0.2em solid #ffffff;
+    border-bottom: 0.3em solid #ffffff;
     padding: 2em;
     align-items: center;
 }
 
 .about .divider {
-    box-shadow: 0.09em 0.09em #4D774E;
+    background-color: #000000;
+    width: 4em;
+    box-shadow: 0.05em 0.05em #3bbcf8;
 }
 
 .about img {
-    max-width: 18em;
+    max-width: 16em;
     max-height:90%;
     grid-column: 1/2;
-    border: 0.3em solid #ffbb42;
+    border: 0.2em solid #ffffff;
+    border-radius: 15px;
+
 }
 
 .about-info {
     grid-column: 2/2;
-    padding-left: 4.3em;
-    color: #FFFFFF;
+    padding-left: 5em;
+    color: #ffffff;
 }
 
 .about-info h2 {
     font-size: 2em;
-    color:#ffbb42;
-    text-shadow: 0.07em 0.07em #164A41;
+    color:#ffffff;
+    text-shadow: 0.07em 0.07em #000000;
 }
 
 .about p {
@@ -227,19 +231,20 @@ span {
 /*----------PORTFOLIO----------*/
 .portfolio {
     width: 100vw;
-    font-size: 1em;
-    background-color: #4D774E;
+    font-size: 1.2em;
+    background-color: #749496;
     padding: 2em;
 }
 
 .portfolio-headings h2{
     font-size: 2em;
-    color: #ffbb42;
+    color: #ffffff;
     text-shadow: 0.07em 0.07em #1b0d0c;
 }
 
 .portfolio-headings .divider {
-    box-shadow: 0.09em 0.09em #1b0d0c;;
+    background-color: #000000;
+    box-shadow: 0.09em 0.09em #ffffff;;
 }
 
 .portfolio .container {
@@ -249,7 +254,7 @@ span {
 .cards {
     width: 100%;
     color: #FFFFFF;
-    margin-top: 1em;
+    margin-top: 2em;
     text-align: center;
     display: flex;
     grid-template-columns: auto;
@@ -259,26 +264,28 @@ span {
 .card {
     margin: 1em;
     width: 40vw;
-    background-color: #1b0d0c;
+    background-color: #000000;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .card-img {
     box-sizing: border-box;
-    height: 8.3em;
+    height: 9em;
     background-image: url(../img/Foto.jpg);
     background-size: 100%;
-    border: 0.3em solid #ffbb42;
+    border: 0.2em solid #000000;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card-title {
     padding: 0.6em;
-    border-left: 0.3em solid #ffbb42;
-    border-right: 0.3em solid #ffbb42;
+    border-left: 0.2em solid #000000;
+    border-right: 0.2em solid #000000;
 }
 
 .card-title p{
     margin: 0 auto;
-    font-size: 0.9em;
+    font-size: .8em;
     text-align: center;
     max-width: fit-content;
 }
@@ -288,16 +295,17 @@ span {
     display: flex;
     padding-bottom: 0.9em;
     justify-content: space-evenly;
-    border-left: 0.3em solid #ffbb42;
-    border-right: 0.3em solid #ffbb42;
-    border-bottom: 0.3em solid #ffbb42;
+    border-left: 0.2em solid #000000;
+    border-right: 0.2em solid #000000;
+    border-bottom: 0.2em solid #000000;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .card-projects-link a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 1.5em;
-    text-shadow: 0.07em 0.07em #164A41;
+    text-shadow: 0.05em 0.05em #400bffde;
     border-radius: 100%;
     transition: ease-in .3s;
 }

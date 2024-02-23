@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'sans';
+    font-family: 'arial';
 }
 
 body::-webkit-scrollbar {
@@ -105,6 +105,7 @@ ul.show {
     display: grid;
     align-items: center;
     background-color: #968974;
+    background: linear-gradient(#968974 44%, #000000c2 121%);
 }
 
 .main img {
@@ -281,9 +282,11 @@ span {
     padding: 0.6em;
     border-left: 0.2em solid #000000;
     border-right: 0.2em solid #000000;
+    font-size: .5em;
 }
 
 .card-title p{
+    padding-top: 20px;
     margin: 0 auto;
     font-size: .8em;
     text-align: center;
@@ -321,16 +324,16 @@ span {
 .contact-section {
     width: 100vw;
     box-sizing: border-box;
-    background: linear-gradient(#1b0d0c 15%, #ffbb42 290%);
+    background: linear-gradient(#996c1fe7 1%, #000000f3 52%);
     padding: 2em 0em;
-    border-top: 0.3em solid #ffbb42;
-    border-bottom: 0.3em solid #ffbb42;
+    border-top: 0.3em solid #ffffff;
+    border-bottom: 0.3em solid #000000;
 }
 
 .contact-section h2 {
     font-size: 2em;
-    text-shadow: 0.07em 0.07em #164A41;
-    color: #ffbb42;
+    text-shadow: 0.07em 0.07em #000000;
+    color: #ffffff;
     text-align: center;
     margin: auto;
     padding-bottom: 1em;
@@ -350,52 +353,56 @@ span {
 
 .form input {
     margin-bottom: 0.8em;
-    background:#4D774E;
-    color: #ffbb42;
+    background:#5dc4ac;
+    color: #000000;
     font-size: 1em;
-    border: 0.3em solid #ffbb42;
+    border: 0.1em solid #000000d7;
     text-align: center;
+    border-radius: 10px;
 }
 
 .form textarea {
     height: 8em;
-    background-color: #4D774E;
+    background-color: #5dc4ac;
     color: #ffbb42;
     border: none;
     font-size: 1em;
-    border: 0.3em solid #ffbb42;
+    border: 0.1em solid #000000d7;
     text-align: center;
     resize: none;
+    border-radius: 20px;
 }
 
 .btn-submit {
-    width: 4em;
+    width: 6em;
     height: 2em;
-    font-size: 1em;
+    font-size: .8em;
     margin-top: 1.3em;
     margin-left: auto;
     margin-right: auto;
     border: none;
     text-transform: uppercase;
-    background-color:#FFFFFF;
+    background-color:#725817;
     cursor: pointer;
-    transition: ease-in .3s;
+    transition: ease-in .2s;
+    border-radius: 20px;
 }
 
 .btn-submit:hover {
-    background-color: #ffbb42;
+    background-color: #808080;
     color: #1b0d0c;
+    
 }
 /*----------CONCTACT----------*/
 
 
 /*----------FOOTER----------*/
 .footer {
-    font-size: 1em;
+    font-size: 0.8em;
     display:grid;
     width: 100vw;
     box-sizing: border-box;
-    background-color: #164A41;
+    background-color: #ffffff;
     max-width: 100vw;
     position: absolute;
 }
@@ -404,23 +411,12 @@ span {
     margin-top: -.2em;
 }
 
-.footer-content h2 {
-    font-size: 1em;
-    padding: 0.4em 0.7em 0em 0.4em;
-    margin-left: 0.3%;
-    color: #ffbb42;
-    text-shadow: 0.07em 0.07em #1b0d0c;
-}
 
-.footer-content h2 span {
-    font-size: 0.88em;
-    text-shadow: 0.07em 0.07em #1b0d0c;
-}
 
 .footer-content h5 {
     font-size: 1em;
     padding: 0.4em 0em 0em;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .social-networks {
@@ -431,7 +427,7 @@ span {
 
 .social-networks i {
     padding: 0.16em 0.4em;
-    color: #FFFFFF;
+    color: #424242;
     text-shadow: 0.07em 0.07em #4D774E;
     transition: ease-in .3s;
 }

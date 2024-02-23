@@ -5,20 +5,22 @@ const email = document.getElementById('correo');
 const nombre = document.getElementById('nombre');
 const mensaje = document.getElementById('mensaje');
 
-document.onclick = function(e){
-    if(e.target.id !== "btn_menu" && e.target.id !== "menu"){
-    menu.classList.remove('active');
-    btn_menu.classList.remove('active');
+const validRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+document.onclick = function(e) {
+    if (e.target.id !== "btn_menu" && e.target.id !== "menu") {
+        menu.classList.remove('active');
+        btn_menu.classList.remove('active');
     }
 };
 
-btn_menu.onclick = function(){
+btn_menu.onclick = function() {
     btn_menu.classList.toggle('active');
     menu.classList.toggle('active');
 };
 
 thanks.onclick = function() {
-    if (email.value.length <= 0 || nombre.value.length <= 0 || mensaje.value.length <= 0){
+    if (email.value.length <= 0 || nombre.value.length <= 0 || mensaje.value.length <= 0) {
         swal({
             title: "Por favor",
             text: "Complete todos los datos",
@@ -26,19 +28,17 @@ thanks.onclick = function() {
             icon: 'error',
             timer: 2500,
         });
-    }
-    else if (!email.value.match(validRegex)){
+    } else if (!email.value.match(validRegex)) {
         swal({
             title: "Por favor",
-            text: "Complete todos los datos",
+            text: "Ingrese un correo electrónico válido",
             buttons: false,
             icon: 'error',
             timer: 2500,
         });
-    }
-    else {
+    } else {
         swal({
-            title: "¡Correo enviado con exito!",
+            title: "¡Correo enviado con éxito!",
             text: "Muchas gracias por comunicarse",
             buttons: false,
             icon: 'success',
@@ -46,4 +46,5 @@ thanks.onclick = function() {
         });
     }
 };
+
 
